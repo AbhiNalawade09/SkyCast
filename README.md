@@ -14,7 +14,7 @@
 
 ## 📸 Preview
 
-![WeatherNow Screenshot](./preview.png) ![image](https://github.com/user-attachments/assets/0cd12225-7666-4484-9883-603d840dd1a6)
+![SkyCast Screenshot](./preview.png) ![image](https://github.com/user-attachments/assets/0cd12225-7666-4484-9883-603d840dd1a6)
 
 
 ## 🛠️ Tech Stack

@@ -1,0 +1,141 @@
+/* Reset & base styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3f2fd;
+  min-height: 100vh;
+}
+
+.app {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease;
+}
+
+
+.search {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search input {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+
+  flex-grow: 1;       
+  min-width: 150px;  
+  max-width: 100%;  
+  box-sizing: border-box;
+}
+
+.search button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.search button:hover {
+  background-color: #0d47a1;
+}
+
+.weather-card {
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.weather-card p {
+  font-size: 1.2rem;
+  margin: 0.4rem 0;
+}
+
+.error-msg {
+  color: #ff4d4f;
+  font-weight: 600;
+  background: #fff0f0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin: 1rem auto;
+  max-width: 90%;
+}
+
+@media screen and (max-width: 480px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .weather-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .weather-card p {
+    font-size: 1rem;
+  }
+
+  .search {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .search input,
+  .search button {
+    width: 100%;      
+  }
+}
+
+
+.app.clear {
+  background: linear-gradient(to top, #fceabb, #f8b500);
+  color: #000;
+}
+
+.app.cloudy {
+  background: linear-gradient(to top, #d7d2cc, #304352);
+  color: #fff;
+}
+
+.app.rainy {
+  background: linear-gradient(to top, #4e54c8, #8f94fb);
+  color: #fff;
+}
+
+.app.snowy {
+  background: linear-gradient(to top, #e0eafc, #cfdef3);
+  color: #000;
+}
+
+.app.thunder {
+  background: linear-gradient(to top, #1f1c2c, #928dab);
+  color: #fff;
+}
+
+.app.default {
+  background: linear-gradient(to top, #cfd9df, #e2ebf0);
+  color: #000;
+}
+
